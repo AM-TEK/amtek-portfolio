@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <div className="mt-5 mb-28 max-w-[45rem] text-center leading-8 sm:mb-10 scroll-mt-28">
+    <div id="card" className="mt-5 mb-28 max-w-[45rem] text-center leading-8 sm:mb-10 scroll-mt-28">
       <h1 className="text-2xl font-bold">About Me</h1>
       <p className="mb-3">
         After returning from work in the ESL industry in Japan, I decided to pursue my passion for computers and technology. I enrolled in a coding bootcamp and learned{" "}
