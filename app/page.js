@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Divider from "@/components/divider";
 import DividerReverse from "@/components/dividerReverse";
 import LandingPage from "@/components/landingPage";
@@ -18,6 +19,8 @@ export default function Home() {
         <Projects />
         <Divider />
         <Skills />
+        <DividerReverse />
+        <Contact />
       </main>
     </NextUIProvider>
   );
