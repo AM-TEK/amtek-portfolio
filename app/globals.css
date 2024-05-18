@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .box {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-} */
-
-line {
-  stroke-width: 7px;
-  stroke-linecap: round;
-  fill: transparent;
-}
-
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -28,15 +16,15 @@ line {
   --clr-5: #0099ff;
 }
 
-#card {
+.card {
   background: var(--clr-1);
   border-radius: 0.5rem;
 
   position: relative;
 }
 
-#card::before,
-#card::after {
+.card::before,
+.card::after {
   content: "";
   position: absolute;
   inset: -0.5rem;
@@ -53,7 +41,7 @@ line {
   animation: rotation 20s linear infinite;
 }
 
-#card::after {
+.card::after {
   filter: blur(1.5rem);
 }
 
@@ -65,3 +53,16 @@ line {
     --gradient-angle: 360deg;
   }
 }
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+} */
+
+line {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  fill: transparent;
+}
+

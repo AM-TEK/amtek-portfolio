@@ -10,7 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function LandingPage() {
   return (
-    <section className="mb-10 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] border-2 border-green-500">
+    <section id='home' className="mb-28 max-w-[50rem] text-center sm:mb-14 scroll-mt-[100rem] border-2 border-green-500">
       <div className="flex items-center justify-center">
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
