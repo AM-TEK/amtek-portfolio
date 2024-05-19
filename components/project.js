@@ -13,10 +13,10 @@ export default function Project({title, description, tags, imageUrl}) {
       shadow="sm"
     >
       <CardBody>
-        <div className="grid items-center justify-center grid-cols-6 gap-6 sm:grid-cols-12 sm:gap-4">
-          <div className="relative col-span-6 md:col-span-4">
+        <div className="grid items-center justify-center grid-cols-6 gap-6 pt-3 sm:grid-cols-12 sm:gap-4">
+          <div className="relative flex justify-center col-span-6 md:col-span-4">
             <Image
-              alt="Album cover"
+              alt={title}
               // className="object-cover"
               style={{objectFit: "contain"}}
               shadow="md"

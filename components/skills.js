@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   return (
-    <section id='skills' className="mb-28 mt-5 max-w-[53rem] scroll-mt-28 text-center sm:mb-28">
+    <section id='skills' className="mt-10 mb-10 max-w-[45rem] text-center leading-8 sm:mb-14 scroll-mt-28">
       <h1 className="mb-3 text-2xl font-bold">
         My Skills
       </h1>

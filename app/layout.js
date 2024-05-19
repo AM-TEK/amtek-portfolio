@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Space_Grotesk } from "next/font/google";
 import Header from "@/components/header";
-import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
+import { Toaster } from "react-hot-toast";
 import { Providers } from "./providers";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Alejandro M | Web Developer",
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <body className={`${inter.className} bg-gray-300 text-gray-900 pt-28 sm:pt-36`}>
+      <body className={`${spaceGrotesk.className} bg-gray-300 text-gray-900 pt-28 sm:pt-36`}>
         <Providers>
           <Header />
           {children}

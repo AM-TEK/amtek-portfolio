@@ -4,7 +4,7 @@ import React from 'react'
 import SubmitBtn from "./submitBtn";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
-
+// mt-10 mb-10 max-w-[45rem] text-center leading-8 sm:mb-14 scroll-mt-28 card
 export default function Contact() {
   return (
     <section id="contact" className="mt-5 mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">

@@ -10,7 +10,7 @@ import { HiDownload } from "react-icons/hi";
 
 export default function LandingPage() {
   return (
-    <section id='home' className="mb-28 max-w-[50rem] text-center sm:mb-14 scroll-mt-[100rem] border-2 border-green-500">
+    <section id='home' className="mb-10 max-w-[50rem] text-center sm:mb-14 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -40,12 +40,12 @@ export default function LandingPage() {
       <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl">
         <span className="font-bold">Hello, I'm Alejandro.</span> I'm a{" "}
         <span className="font-bold">frontend developer</span> with 4 years of experience. I enjoy building apps & tinkering with new technology. My focus is{" "}
-        <span className="font-bold">JS</span> with{" "}
-        <span className="italic">React & Next</span> .
+        <span className="font-bold">JavaScript</span> with{" "}
+        <span className="italic">React & Next.js</span> .
       </h1>
 
       <div className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row">
-        <Link 
+        {/* <Link 
           href="#contact"
           className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-md outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"  
         >
@@ -53,9 +53,10 @@ export default function LandingPage() {
           <BsArrowRight 
             className="transition opacity-70 group-hover:translate-x-2" 
           />
-        </Link>
+        </Link> */}
         <a 
-          className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" href="/resume.pdf" 
+          className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" 
+          href="/resume.pdf" 
           target="_blank"
         >
           Download Resume 
@@ -63,20 +64,22 @@ export default function LandingPage() {
             className="transition opacity-60 group-hover:translate-y-1"
           />
         </a>
-        <a 
-          className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 border-black/20"
-          href="www.linkedin.com/in/alejandro-maldonado-35929232"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a 
-          className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 border-black/20"
-          href="https://github.com/AM-TEK?tab=overview&from=2024-05-01&to=2024-05-14"
-          target="_blank"
-        >
-          <BsGithub />
-        </a>
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <a 
+            className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 border-black/50"
+            href="www.linkedin.com/in/alejandro-maldonado-35929232"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a 
+            className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 border-black/50"
+            href="https://github.com/AM-TEK?tab=overview&from=2024-05-01&to=2024-05-14"
+            target="_blank"
+          >
+            <BsGithub />
+          </a>
+        </div>
       </div>
     </section>
   )

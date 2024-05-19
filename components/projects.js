@@ -4,7 +4,7 @@ import Project from './project'
 
 export default function Projects() {
   return (
-    <section id='projects' className='mt-5 text-center scroll-mt-28 mb-28 sm:mb-14'>
+    <section id='projects' className='mt-10 mb-10 max-w-[45rem] text-center leading-8 sm:mb-14 scroll-mt-28 card'>
       <h1 className="text-2xl font-bold">Projects</h1>
       <div>
         {
@@ -15,6 +15,6 @@ export default function Projects() {
           ))
         }
       </div>
-      </section>
+    </section>
   )
 }
