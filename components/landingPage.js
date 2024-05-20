@@ -7,11 +7,31 @@ import { motion } from "framer-motion";
 import profilePic from "@/public/alejandroPortrait.jpeg"
 import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import brandImage from "@/public/AM-TEK.jpg";
 
 export default function LandingPage() {
   return (
     <section id='home' className="mb-10 max-w-[50rem] text-center sm:mb-14 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
+      <motion.div
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+          }}
+          className="absolute bg-gray-300 rounded-full shadow-xl"
+          style={{
+            width: "200px",
+            height: "200px",
+            backgroundImage: `url(${brandImage.src})`,
+            backgroundSize: '70%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundColor: 'black',
+          }}
+        ></motion.div>
+        
         <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}

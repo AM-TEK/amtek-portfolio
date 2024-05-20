@@ -10,21 +10,20 @@
 
 :root {
   --clr-1: #d1d5da;
-  --clr-2: #073438;
-  --clr-3: #00cc88;
-  --clr-4: #ff0055;
-  --clr-5: #0099ff;
+  /* --clr-2: #073438; */
+  --clr-3: #3ce37e;
+  --clr-4: #d2d5da;
+  --clr-5: #1a6bf9;
 }
 
-.card {
+#about {
   background: var(--clr-1);
   border-radius: 0.5rem;
-
   position: relative;
 }
 
-.card::before,
-.card::after {
+#about::before,
+#about::after {
   content: "";
   position: absolute;
   inset: -0.5rem;
@@ -41,8 +40,8 @@
   animation: rotation 20s linear infinite;
 }
 
-.card::after {
-  filter: blur(1.5rem);
+#about::after {
+  filter: blur(3.5rem);
 }
 
 @keyframes rotation {
@@ -53,12 +52,6 @@
     --gradient-angle: 360deg;
   }
 }
-
-/* .box {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-} */
 
 line {
   stroke-width: 7px;

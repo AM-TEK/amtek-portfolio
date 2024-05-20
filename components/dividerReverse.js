@@ -1,6 +1,7 @@
 "use client"
 import "@/app/globals.css";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const draw = {
   hidden: { pathLength: 0, opacity: 0 },
@@ -17,42 +18,46 @@ const draw = {
   },
 };
 export default function DividerReverse() {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Set this to true if you want the animation to trigger only once
+    threshold: 0, // Change this value based on when you want the animation to trigger
+  });
   return (
-    <motion.div className="flex items-center justify-center">
+    <motion.div ref={ref} className="flex items-center justify-center">
       <motion.svg
         className="w-full h-auto max-w-screen-lg"
         width="600"
         height="200"
         viewBox="0 0 600 200"
         initial="hidden"
-        animate="visible"
+        animate={inView ? "visible" : "hidden"}
       >
         <motion.line
           x1="240"
           y1="30"
           x2="100"
           y2="170"
-          stroke="#00cc88"
+          stroke="#3ce37e"
           variants={draw}
-          custom={2.5}
+          // custom={2.5}
         />
         <motion.line
           x1="360"
           y1="30"
           x2="220"
           y2="170"
-          stroke="#ff0055"
+          stroke="#d2d5da"
           variants={draw}
-          custom={3.5}
+          // custom={3.5}
         />
         <motion.line
           x1="480"
           y1="30"
           x2="340"
           y2="170"
-          stroke="#0099ff"
+          stroke="#1a6bf9"
           variants={draw}
-          custom={4.5}
+          // custom={4.5}
         />
       </motion.svg>
     </motion.div>

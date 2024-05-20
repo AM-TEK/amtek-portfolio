@@ -1,7 +1,7 @@
 
 export default function About() {
   return (
-    <section id="about" className="mt-10 mb-10 max-w-[45rem] text-center leading-8 sm:mb-14 scroll-mt-28 card">
+    <div id="about" className="mt-10 mb-10 max-w-[45rem] text-center text-black leading-8 sm:mb-14 scroll-mt-28">
       <h1 className="text-2xl font-bold">About Me</h1>
       <p className="mb-3">
         After returning from work in the ESL industry in Japan, I decided to pursue my passion for computers and technology. I enrolled in a coding bootcamp and learned{" "}
@@ -15,6 +15,6 @@ export default function About() {
         <span className="italic">When I'm not coding</span>, I enjoy reading, playing
         video games, and hiking.
       </p>
-    </section>
+    </div>
   )
 }
