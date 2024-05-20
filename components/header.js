@@ -7,7 +7,7 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home")
+  // const [activeSection, setActiveSection] = useState("Home")
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -30,19 +30,19 @@ export default function Header() {
               <Link
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
-                  {
-                    "text-gray-950":
-                      activeSection === link.name,
-                  }
+                  // {
+                  //   "text-gray-950":
+                  //     activeSection === link.name,
+                  // }
                 )}
                 href={link.hash}
-                onClick={() => {
-                  setActiveSection(link.name);
-                }}
+                // onClick={() => {
+                //   setActiveSection(link.name);
+                // }}
               >
                 {link.name}
                 
-                {link.name === activeSection && (
+                {/* {link.name === activeSection && ( */}
                   <motion.span
                     className="absolute inset-0 bg-gray-300 rounded-sm -z-10"
                     layoutId="activeSection"
@@ -52,7 +52,7 @@ export default function Header() {
                       damping: 30,
                     }}
                   ></motion.span>
-                )}
+                {/* )} */}
               </Link>
             </motion.li>
           ))}
