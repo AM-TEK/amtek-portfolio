@@ -76,7 +76,7 @@ export default function LandingPage() {
         </Link> */}
         <a 
           className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" 
-          href="/resume.pdf" 
+          href="/AMResume.pdf" 
           target="_blank"
         >
           Download Resume 
