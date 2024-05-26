@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="!scroll-smooth" suppressHydrationWarning>
-      <body className={`${raleway.className}  text-gray-200 pt-28 sm:pt-36`}>
+    <html lang="en" className="!scroll-smooth">
+      <body className={`${raleway.className}  text-gray-200 pt-28 sm:pt-36`} suppressHydrationWarning={true}>
         <Providers>
           <Header />
           {children}
