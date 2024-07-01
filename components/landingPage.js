@@ -2,11 +2,10 @@
 
 import React from 'react'
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import profilePic from "@/public/alejandroPortrait.jpeg"
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import profilePic from "@/public/alejandroPortrait.jpeg"
 import brandImage from "@/public/AM-TEK.jpg";
 
 export default function LandingPage() {
@@ -65,15 +64,6 @@ export default function LandingPage() {
       </h1>
 
       <div className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row">
-        {/* <Link 
-          href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-md outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"  
-        >
-          Contact Me 
-          <BsArrowRight 
-            className="transition opacity-70 group-hover:translate-x-2" 
-          />
-        </Link> */}
         <a 
           className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" 
           href="/AMResume.pdf" 

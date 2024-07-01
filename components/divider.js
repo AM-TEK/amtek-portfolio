@@ -21,8 +21,8 @@ const draw = {
 
 export default function Divider() {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Set this to true if you want the animation to trigger only once
-    threshold: 0, // Change this value based on when you want the animation to trigger
+    triggerOnce: false,
+    threshold: 0,
   });
   return (
     <motion.div ref={ref} className="flex items-center justify-center">

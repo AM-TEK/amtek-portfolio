@@ -10,7 +10,7 @@ export default function About() {
         <span className="font-medium">
           React, NextJS, NodeJS, & Tailwind
         </span>
-        . I am also familiar with TypeScript, Go, & JestJS. I am always looking to
+        . I am also familiar with TypeScript, PHP Laravel, & SQL. I am always looking to
         learn new technologies and am currently looking for a full-time position as a software developer.{" "}
         <span className="italic">When I'm not coding</span>, I enjoy reading, playing
         video games, and hiking.
