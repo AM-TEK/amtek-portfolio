@@ -79,7 +79,7 @@ export default function LandingPage() {
         <div className="flex flex-wrap items-center justify-center gap-2">
           <a 
             className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 border-black/50"
-            href="/certifications/CompTIA-ITF+Certification.pdf"
+            href="/CompTIA-ITF+Certification.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
