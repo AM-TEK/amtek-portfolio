@@ -7,6 +7,8 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import profilePic from "@/public/alejandroPortrait.jpeg"
 import brandImage from "@/public/AM-TEK.jpg";
+import comptiaLogo from "@/public/comptia-itf-certification.png";
+// import comptiaCert from "@/public/CompTIA-ITF+Certification.pdf";
 
 export default function LandingPage() {
   return (
@@ -66,7 +68,7 @@ export default function LandingPage() {
       <div className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row">
         <a 
           className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" 
-          href="/AMResume.pdf" 
+          href="/AM-IT-Resume.pdf" 
           target="_blank"
         >
           Download Resume 
@@ -75,6 +77,19 @@ export default function LandingPage() {
           />
         </a>
         <div className="flex flex-wrap items-center justify-center gap-2">
+          <a 
+            className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 border-black/50"
+            href="/certifications/CompTIA-ITF+Certification.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image 
+              src={comptiaLogo} 
+              alt="CompTIA Certification Logo" 
+              width={20} 
+              height={20} 
+            />
+          </a>
           <a 
             className="flex items-center gap-2 p-4 text-gray-800 transition bg-white border rounded-lg cursor-pointer focus:scale-110 hover:scale-110 active:scale-105 border-black/50"
             href="https://www.linkedin.com/in/alejandro-maldonado-35929232"
