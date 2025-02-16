@@ -68,7 +68,7 @@ export default function LandingPage() {
       <div className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row">
         <a 
           className="flex items-center gap-2 py-3 transition bg-gray-400 border rounded-md outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20" 
-          href="/AM-IT-Resume.pdf" 
+          href="/AM-IT-Resume.docx.pdf" 
           target="_blank"
         >
           Download Resume 
